@@ -1,10 +1,12 @@
 from django.conf.urls.defaults import *
+from russel_in.views import *
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+                       ('^hello/$', hello),
     # Example:
     # (r'^russel_in/', include('russel_in.foo.urls')),
 
